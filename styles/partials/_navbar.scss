@@ -6,44 +6,86 @@
 }
 .navbar {
     background-color:$BandSite-Black;
-    height: 80px;
-    // display: inline-block;
+    height: 60px;
     position: relative;
-    max-width: 767px;
-    min-width: 320px;
+
+
+    @include tablet {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
 
     &__logo {
         justify-content: center;
-        display: flex;
+        display:flex;
+        margin: 10px 0px 3px 0px;
+        width: 100%;
+        max-width: 120px;
+        max-height: 20px;
 
         &--icon {
             max-width: 120px;
             max-height: 20px;
             justify-content: center;
-            @extend %align-center;
+        }
+
+        @include tablet {
+            justify-content: left;
+            display: flex;
+            margin: 0px 35px;
+            padding: 0px;
         }
     }
     &__menu {
         // display: grid;
         // grid-template-columns: 1fr 1fr;
         // display: flex;
-        justify-content: center;
+        // justify-content:space-evenly;
         align-items: center;
         width: 100%;
         padding-left: 16px;
         padding-right: 16px;
+        // display: inline;
+        display: flex;
+        flex-direction: column;
 
-        &--links {
-            text-decoration: none;
-            color:$Mercury;
-            width: 50%;
-            // width: max-content;
-            // @extend %align-center;
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+        }
+}
 
-            &:active {
-                color:$White;
-                text-decoration: underline;
+    &__items {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            
+
+            // &:active {
+            //     color:$White;
+            //     text-decoration: underline;
+
+            @include tablet {
+                width: 200px;
             }
+    }
+
+    &__link {
+        text-decoration: none;
+        color:$Mercury;
+        font-size: 13px;
+        justify-items: center;
+        width: 100%;
+        text-align: center;
+        // justify-content: space-between;
+
+        &:active {
+            color:$White;
+            font-weight: 700;
+            text-decoration: underline;
+            font-size: 13px;
         }
     }
 }
