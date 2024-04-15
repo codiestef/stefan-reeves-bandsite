@@ -6,29 +6,39 @@
 }
 .navbar {
     background-color:$BandSite-Black;
-    height: 100px;
-    display: flex;
+    height: 80px;
+    // display: inline-block;
     position: relative;
+    max-width: 767px;
+    min-width: 320px;
 
     &__logo {
-        max-width: 120px;
-        max-height: 20px;
         justify-content: center;
-        @extend %align-center;
+        display: flex;
 
         &--icon {
-            display:inline-block;
+            max-width: 120px;
+            max-height: 20px;
+            justify-content: center;
+            @extend %align-center;
         }
     }
     &__menu {
-        @extend %align-center;
-        list-style: none;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // display: flex;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
 
         &--links {
             text-decoration: none;
             color:$Mercury;
-            @extend %align-center;
+            width: 50%;
+            // width: max-content;
+            // @extend %align-center;
 
             &:active {
                 color:$White;
