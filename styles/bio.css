@@ -1,3 +1,35 @@
+.navbar__menu--links, .navbar__menu, .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #323232;
+  height: 100px;
+  display: flex;
+  position: relative;
+}
+.navbar__logo {
+  max-width: 120px;
+  max-height: 20px;
+  justify-content: center;
+}
+.navbar__logo--icon {
+  display: inline-block;
+}
+.navbar__menu {
+  list-style: none;
+  justify-content: center;
+}
+.navbar__menu--links {
+  text-decoration: none;
+  color: #E1E1E1;
+}
+.navbar__menu--links:active {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
