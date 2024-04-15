@@ -1,0 +1,39 @@
+@import './variables';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    background-color:$BandSite-Black;
+    height: 100px;
+    display: flex;
+    position: relative;
+
+    &__logo {
+        max-width: 120px;
+        max-height: 20px;
+        justify-content: center;
+        @extend %align-center;
+
+        &--icon {
+            display:inline-block;
+        }
+    }
+    &__menu {
+        @extend %align-center;
+        list-style: none;
+        justify-content: center;
+
+        &--links {
+            text-decoration: none;
+            color:$Mercury;
+            @extend %align-center;
+
+            &:active {
+                color:$White;
+                text-decoration: underline;
+            }
+        }
+    }
+}
