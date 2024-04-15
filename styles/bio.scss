@@ -4,5 +4,63 @@
 
 * {
     box-sizing: border-box;
+}
 
+// .hero {
+//     background-image: url(../assets/images/hero-bio.jpg);
+
+//     &__container {
+//         align-items: center;
+//         height: 50vh;
+    
+//         &--title {
+//             display:flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+//     }
+// }
+
+// .hero {
+//     background-image: url(../assets/images/hero-bio.jpg);
+
+//     &__container {
+//         align-items: center;
+//         height: 50vh;
+    
+//         &--title {
+//             display: flex;
+//             align-items: center; /* Add this line */
+//         }
+//     }
+// }
+.hero {
+    position: relative;
+    background-image: url(../assets/images/hero-bio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before { 
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(50, 50, 50, 0.5);
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 40vh;
+        position: relative;
+
+            &--title {
+                display: flex;
+                align-items: center;
+                // position:absolute;
+                color:$White;
+            }
+    }
 }
