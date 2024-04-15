@@ -1,0 +1,15 @@
+@import './variables';
+
+// Desktop Media Query
+@mixin desktop {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+// Tablet Media Query
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
