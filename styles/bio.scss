@@ -1,5 +1,6 @@
 @import './partials/variables';
 @import './partials/navbar';
+@import './partials/footer';
 
 * {
     box-sizing: border-box;
@@ -59,15 +60,15 @@
 }
 
 .photo-gallery {
-    background-color:$Mercury;
-    padding-top: 16px;
+    background-color:$Alabaster;
+    padding-top: 10px;
 
     &__container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         max-width: 100%;
-        padding: auto;
+        margin-bottom: 15px;
     }
 
     &__item {
