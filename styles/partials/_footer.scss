@@ -1,0 +1,110 @@
+@import './variables';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+.footer {
+    background-color:$BandSite-Black;
+    font-size: 13px;
+    line-height: 18px;
+    color:$White;
+    margin: 0px;
+    max-width: 100%;
+
+    @include tablet {
+        display: flex;
+        // justify-content: flex-start;
+        // gap: 20px;
+    }
+
+    &__menu {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            // flex-direction: row;
+            // align-items: center;
+        }
+    }
+
+    &__contact {
+        
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    }
+}
+
+    &__social {
+        justify-content: space-between;
+        display:flex;
+        max-width: 120px;
+        max-height: 20px;
+
+        @include tablet {
+            justify-content: left;
+            display: flex;
+            margin: 0px 35px;
+            padding: 0px;
+        }
+
+        &--icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            
+
+            @include tablet {
+                width: 200px;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &__management {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__locations {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include tablet {
+            width: 30%;
+            // flex-direction: row;
+        }
+    }
+
+    &__header {
+        font-size: 24px;
+        line-height: 32px;
+        color: $White;
+        // padding-left: 16px;
+    
+        @include tablet {
+            font-size: 36px;
+            line-height: 44px;
+            padding-left: 36px;
+        }
+    }
+    
+        &__copy {
+            text-decoration: none;
+            color:$White;
+        }
+    
+}
