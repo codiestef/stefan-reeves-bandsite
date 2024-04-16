@@ -1,39 +1,67 @@
 @import './partials/variables';
 @import './partials/navbar';
 
-
 * {
     box-sizing: border-box;
 }
 
-// .hero {
-//     background-image: url(../assets/images/hero-bio.jpg);
+body {
+    font-size: 13px;
+    line-height: 18px;
+    color:$BandSite-Black;
+    margin: 0px;
 
-//     &__container {
-//         align-items: center;
-//         height: 50vh;
-    
-//         &--title {
-//             display:flex;
-//             justify-content: center;
-//             align-items: center;
-//         }
-//     }
-// }
 
-// .hero {
-//     background-image: url(../assets/images/hero-bio.jpg);
+    @include tablet {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
 
-//     &__container {
-//         align-items: center;
-//         height: 50vh;
-    
-//         &--title {
-//             display: flex;
-//             align-items: center; /* Add this line */
-//         }
-//     }
-// }
+.page-header {
+    font-size: 24px;
+    color: $White;
+    // float: left;
+    line-height: 32px;
+    padding-left: 16px;
+
+    @include tablet {
+        font-size: 60px;
+        line-height: 68px;
+        padding-left: 36px;
+    }
+    @include desktop {
+        padding-left: auto;
+    }
+}
+
+.section-header {
+    font-size: 24px;
+    line-height: 32px;
+    color: $BandSite-DarkBlack;
+
+    @include tablet {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.subheader {
+    font-size: 14px;
+    line-height: 22px;
+    color: $BandSite-DarkBlack;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.subcopy {
+    font-size: 14px;
+    color:$BandSite-DarkBlack;
+}
+
 .hero {
     position: relative;
     background-image: url(../assets/images/hero-bio.jpg);
@@ -55,12 +83,61 @@
         align-items: center;
         height: 40vh;
         position: relative;
+    }
+}
 
-            &--title {
-                display: flex;
-                align-items: center;
-                // position:absolute;
-                color:$White;
-            }
+.about {
+    background-color: $White;
+    margin: auto;
+    width: 90%;
+
+    
+    @include tablet {
+        width: 80%;
+    }
+
+    &__image--small {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+
+    
+
+    &__paragraphs {
+        display: flex;
+
+        @include tablet {
+        display: inline-block;
+        width: 45%;
+
+        &--copy {
+            justify-content: space-between;
+        }
+    }
+
+        // &--copy {
+        //     width: 100%;
+
+        //     @include tablet {
+        //         width: 45%;
+        //     }
+        // }
+    }
+}
+
+.photo-gallery {
+    display: flex;
+    z-index: 0;
+
+    &__container {
+        z-index: 1;
+        position: relative;
+
+        &--images {
+            max-height: 300px;
+            width: 100%;
+        }
     }
 }
