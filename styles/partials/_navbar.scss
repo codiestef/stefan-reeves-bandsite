@@ -38,15 +38,10 @@
         }
     }
     &__menu {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // display: flex;
-        // justify-content:space-evenly;
         align-items: center;
         width: 100%;
         padding-left: 16px;
         padding-right: 16px;
-        // display: inline;
         display: flex;
         flex-direction: column;
 
