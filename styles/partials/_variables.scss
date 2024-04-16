@@ -8,123 +8,60 @@ $BandSite-DarkBlack:#000000;
 $Mercury: #E1E1E1;
 $Alabaster:#FAFAFA;
 
+body {
+    font-size: 13px;
+    line-height: 18px;
+    color:$BandSite-Black;
+    margin: 0px;
 
-// // Global Styles
 
-// // VARIABLES
-// $white-lighter: #FFFFFF;
-// $white: darken($white-lighter, 3%);
-// $white-darker: darken($white, 3%);
-// $black: #555555;
-// $black-lighter: lighten($black, 20%);
-// $black-darker: darken($black, 15%);
-// $primary-color: #00AFB2;
-// $primary-color-lighter: lighten($primary-color, 5%);
-// $primary-color-darker: darken($primary-color, 10%);
-// $secondary-color: #FF6100;
-// $secondary-color-lighter: lighten($secondary-color, 15%);
-// $secondary-color-darker: darken($secondary-color, 15%);
+    @include tablet {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
 
-// // GLOBAL STYLES
-// h3 {
-//   margin: 0 0 10px 0;
-// }
+.page-header {
+    font-size: 24px;
+    color: $White;
+    line-height: 32px;
+    padding-left: 16px;
 
-// // EXTENSIONS
-// .section {
-//   min-height: 200px;
-// }
-// .centered-block {
-//   display:block;
-//   margin-left:auto;
-//   margin-right:auto;
-// }
-// .article {
-//   max-width: 960px;
-//   padding: 30px 10px;
-//   overflow:auto;
-// }
-// .cta-button--hovered {
-//     background-color: $white;
-//     color:$black-darker;
-//     border: 1px solid $black-lighter;
-//     box-shadow: 1px 3px 0px $black;
-//     transition:0.2s;
-// }
+    @include tablet {
+        font-size: 60px;
+        line-height: 68px;
+        padding-left: 36px;
+    }
+    @include desktop {
+        padding-left: auto;
+    }
+}
 
-// STYLES
-// .section--first {
-//   @extend .section;
-//   background-color: $white-lighter;
-// }
+.section-header {
+    font-size: 24px;
+    line-height: 32px;
+    color: $BandSite-DarkBlack;
+    padding-left: 16px;
 
-// .section--second {
-//   @extend .section;
-//   background-color: $white;
-// }
+    @include tablet {
+        font-size: 36px;
+        line-height: 44px;
+        padding-left: 36px;
+    }
+}
 
-// .coolfeat {
-//   @extend .centered-block;
-//   @extend .article;
-  
-//   &__content {
-//     width:55%;
-//     float:left;
-//   }
-  
-//   &__title {
-//     color: $primary-color-darker;
-//   }
-  
-//   &__subtitle {
-//     color: $primary-color;
-//   }
-  
-//   &__copy {
-//     color: $black-lighter;
-//   }
-  
-//   &__cta {
-//     background-color: $primary-color;
-//     color: $white;
-//     box-shadow: 1px 3px 0px $primary-color-darker;
-//     border: 1px solid $primary-color;
-//     transition: 0.1s;
-//     &:hover {
-//       @extend .cta-button--hovered;
-//     }
-//   }
-// }
+.subheader {
+    font-size: 14px;
+    line-height: 22px;
+    color: $BandSite-DarkBlack;
 
-// .nicefeat {
-//   @extend .centered-block;
-//   @extend .article;
-  
-//   &__content {
-//     width:55%;
-//     float:right;
-//   }
-  
-//   &__title {
-//     color: $secondary-color-darker;
-//   }
-  
-//   &__subtitle {
-//     color: $secondary-color;
-//   }
-  
-//   &__copy {
-//     color: $black;
-//   }
-  
-//   &__cta {
-//     background-color: $secondary-color;
-//     color: $white;
-//     box-shadow: 1px 3px 0px $secondary-color-darker;
-//     border: 1px solid $secondary-color;
-//     transition: 0.1s;
-//     &:hover {
-//       @extend .cta-button--hovered;
-//     }
-//   }
-// }
+    @include tablet {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.subcopy {
+    font-size: 14px;
+    color:$BandSite-DarkBlack;
+}
