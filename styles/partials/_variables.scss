@@ -8,11 +8,22 @@ $BandSite-DarkBlack:#000000;
 $Mercury: #E1E1E1;
 $Alabaster:#FAFAFA;
 
+
+@font-face {
+font-family: 'AvenirNextLTPro';
+src: url("C:\Users\user\OneDrive\Documents\stefan-reeves-bandsite\assets\fonts\AvenirNextLTPro.ttf'") format('truetype');
+}
+
+
+// body {
+//     font-family: 'YourFontName', sans-serif;
+
 body {
     font-size: 13px;
     line-height: 18px;
     color:$BandSite-Black;
     margin: 0px;
+    font-family: 'AvenirNextLTPro';
 
 
     @include tablet {
@@ -64,4 +75,19 @@ body {
 .subcopy {
     font-size: 14px;
     color:$BandSite-DarkBlack;
+}
+
+footer {
+    font-size: 13px;
+    line-height: 18px;
+    color:$White;
+    margin: 0px;
+
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 2opx;
+    }
+
+    
 }
