@@ -114,14 +114,48 @@
 }
 
 .comment-form {
-    width: 70%;
+    // width: 100%;
     align-items: end;
+    margin: auto;
+    padding: 16px;
 
+    input[type=text] {
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid $Mercury;
+        border-radius: 4px;
+        padding: 12px;
+
+        @include tablet {
+            height: 48px;
+        }
+    }
+
+    input[type=review] {
+        width:$form-field-width;
+        min-height: 108px;
+        border:$form-field-border-default;
+        border-radius:$form-field-radius;
+        padding:$form-field-padding-mobile;
+        
+        @include tablet {
+            height: 108px;
+        }
+    }
 
     &__button {
         display:inline;
-        background-color: $BandSite-Black;
-        width: 100%;
+        color:$primary-cta-text-color-default;
+        background-color:$primary-cta-background-color-default;
+        width:$button-width-mobile;
+        height:$button-height;
+        border-radius:$button-radius;
+        margin-top: 24px;
+
+        @include tablet {
+            width:$button-width-desktop;
+            padding:$button-padding-desktop;
+        }
     }
 }
 
@@ -130,28 +164,29 @@
     padding: 10px;
 
     &__item {
-
-
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &__name {
-
-
-    }
-
-    &__review {
-
-
+        color:$BandSite-DarkBlack;
+        display:inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     &__timestamp {
-
-
+        color:$secondary-text-color;
+        display:inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-
-
-
-
-
+    
+    &__review {
+        color:$BandSite-Black;
+        width: 100%;
+    }
 }
