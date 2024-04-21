@@ -37,22 +37,23 @@ function loopThroughComments() {
       commentName.innerText = comments[i].name;
       commentName.classList.add("comment-list__name");
   
-      // add <p> element for comment review
-      const commentReview = document.createElement("p");
-      commentReview.innerText = comments[i].review;
-      commentReview.classList.add("comment-list__review");
-      // commentReview.style.border = "1px solid red"; // you don't have to style this way, just use a class like above and use scss
-  
       // add <p> element for comment timestamp
       const commentDateCreated = document.createElement("p");
       commentDateCreated.innerText = new Date(
         comments[i].timestamp
       ).toLocaleDateString();
       commentDateCreated.classList.add("comment-list__timestamp");
+
+      // add <p> element for comment review
+      const commentReview = document.createElement("p");
+      commentReview.innerText = comments[i].review;
+      commentReview.classList.add("comment-list__review");
+      // commentReview.style.border = "1px solid red"; // you don't have to style this way, just use a class like above and use scss
+  
   
       commentItem.appendChild(commentName); // append <h3> name to <li>
-      commentItem.appendChild(commentReview); // append <p> review to <li>
       commentItem.appendChild(commentDateCreated); // append <p> timestamp to <li>
+      commentItem.appendChild(commentReview); // append <p> review to <li>
       commentList.appendChild(commentItem); // append the list item to the commentList <ul>
     }
   }
