@@ -8,86 +8,156 @@ $BandSite-DarkBlack:#000000;
 $Mercury: #E1E1E1;
 $Alabaster:#FAFAFA;
 
+// Website Colors
+// Primary Colors
+$primary-text-color: #323232;
+$primary-text-color-dark: #000000;
+$secondary-text-color: #AFAFAF;
+$light-background-color: #FFFFFF;
 
-@font-face {
-font-family: 'AvenirNextLTPro';
-src: url("C:\Users\user\OneDrive\Documents\stefan-reeves-bandsite\assets\fonts\AvenirNextLTPro.ttf'") format('truetype');
-}
+// Secondary Colors
+$divider-color: #E1E1E1;
+$light-background-color-alt: #FAFAFA;
 
+// Type Kit
+// Typeface & Weights
+$typeface-primary: 'Avenir Next', sans-serif;
+$font-weight-regular: 400;
+$font-weight-demi: 600;
+$font-weight-bold: 700;
 
-// body {
-//     font-family: 'YourFontName', sans-serif;
+// Text Styles
+// Desktop & Tablet Text Styles
+$page-header-font-size-desktop: 60px;
+$page-header-line-height-desktop: 68px;
+$section-header-font-size-desktop: 36px;
+$section-header-line-height-desktop: 44px;
+$subheader-font-size-desktop: 24px;
+$subheader-line-height-desktop: 32px;
+$body-copy-font-size-desktop: 14px;
+$body-copy-line-height-desktop: 22px;
+$footer-copy-font-size-desktop: 14px;
+$footer-copy-line-height-desktop: 20px;
+$labels-buttons-font-size-desktop: 12px;
+$labels-buttons-line-height-desktop: 20px;
 
-body {
-    font-size: 13px;
-    line-height: 18px;
-    color:$BandSite-Black;
-    margin: 0px;
-    font-family: 'AvenirNextLTPro';
+// Mobile Text Styles
+$page-header-font-size-mobile: 24px;
+$page-header-line-height-mobile: 32px;
+$page-header-font-weight-mobile:$font-weight-bold;
+$section-header-font-size-mobile: 24px;
+$section-header-line-height-mobile: 32px;
+$section-header-font-weight-mobile:$font-weight-bold;
+$subheader-font-size-mobile: 14px;
+$subheader-line-height-mobile: 22px;
+$subheader-font-weight-mobile:$font-weight-demi;
+$body-copy-font-size-mobile: 13px;
+$body-copy-line-height-mobile: 18px;
+$body-copy-font-weight-mobile:$font-weight-regular;
+$footer-copy-font-size-mobile: 13px;
+$footer-copy-line-height-mobile: 18px;
+$footer-copy-font-weight-mobile:$font-weight-regular;
+$labels-buttons-font-size-mobile: 10px;
+$labels-buttons-line-height-mobile: 20px;
+$labels-buttons-font-weight-mobile:$font-weight-bold;
 
+// Website Colors
+// Primary Colors
+$primary-text-color: #323232;
+$primary-text-color-dark: #000000;
+$secondary-text-color: #AFAFAF;
+$light-background-color: #FFFFFF;
 
-    @include tablet {
-        font-size: 14px;
-        line-height: 22px;
-    }
-}
+// Secondary Colors
+$divider-color: #E1E1E1;
+$light-background-color-alt: #FAFAFA;
 
-.page-header {
-    font-size: 24px;
-    color: $White;
-    line-height: 32px;
-    padding-left: 16px;
+// Layout Grid
+// Desktop Grid
+$desktop-screen: 1280px;
+$desktop-grid-columns: 12;
+$desktop-grid-margin: auto;
+$desktop-grid-column-width: 63px;
+$desktop-grid-gutter-width: 24px;
 
-    @include tablet {
-        font-size: 60px;
-        line-height: 68px;
-        padding-left: 36px;
-    }
-    @include desktop {
-        padding-left: auto;
-    }
-}
+// Tablet Grid
+$tablet-screen: 768px;
+$tablet-screen-max: 1279px;
+$tablet-grid-margin: 36px;
 
-.section-header {
-    font-size: 24px;
-    line-height: 32px;
-    color: $BandSite-DarkBlack;
-    padding-left: 16px;
+// Mobile Grid
+$mobile-screen: 767px;
+$mobile-grid-columns: 6;
+$mobile-grid-margin: 16px;
 
-    @include tablet {
-        font-size: 36px;
-        line-height: 44px;
-        padding-left: 36px;
-    }
-}
+// Padding
+// Desktop & Tablet Padding
+$padding-before-headlines-desktop: 48px;
+$padding-after-headlines-desktop: 36px;
+$padding-between-components-desktop: 36px;
+$padding-headlines-desktop: 48px 36px 36px 36px;
 
-.subheader {
-    font-size: 14px;
-    line-height: 22px;
-    color: $BandSite-DarkBlack;
+// Mobile Padding
+$padding-before-headlines-mobile: 24px;
+$padding-after-headlines-mobile: 16px;
+$padding-between-components-mobile: 16px;
+$padding-headlines-mobile: 24px 16px 16px 16px;
 
-    @include tablet {
-        font-size: 24px;
-        line-height: 32px;
-    }
-}
+// Iconography
+// Button Dimensions
+$button-height: 40px;
+$button-width-desktop: 150px;
+$button-padding-desktop: 0 32px;
+$button-width-mobile: 100%;
 
-.subcopy {
-    font-size: 14px;
-    color:$BandSite-DarkBlack;
-}
+// Button Radius
+$button-radius: 4px;
 
-footer {
-    font-size: 13px;
-    line-height: 18px;
-    color:$White;
-    margin: 0px;
+// Primary CTA Colors
+$primary-cta-text-color-default: #FFFFFF;
+$primary-cta-background-color-default: #323232;
+$primary-cta-text-color-hover: #FFFFFF;
+$primary-cta-background-color-hover: #000000;
 
+// BandSite Logo
+$logo-background-color: #323232;
+$logo-max-height: 20px;
+$logo-max-width: 120px;
 
-    @include tablet {
-        font-size: 14px;
-        line-height: 2opx;
-    }
+// Navigation
+$navigation-inactive-link-color: #E1E1E1;
+$navigation-active-link-color: #FFFFFF;
+$navigation-underline-color: #FFFFFF;
+$navigation-underline-width-min: 1; // grid column unit
+$navigation-underline-width-max: auto;
 
-    
-}
+// Dividers
+$divider-stroke-width: 1px;
+$divider-fill-color: #E1E1E1;
+
+// Form Fields
+$form-field-height-desktop: 48px;
+$form-field-height-mobile: 36px;
+$form-field-width: 100%;
+$form-field-radius: 4px;
+$form-field-padding-desktop: 16px;
+$form-field-padding-mobile: 12px;
+$form-field-label-spacing: 4px;
+$form-field-border-default: 1px solid #E1E1E1; // Mercury
+$form-field-border-active: 1px solid #323232; // BandSite-Black
+$form-field-border-error: 1px solid #D22D2D;
+
+// Tables
+$table-row-padding-desktop: 24px 18px;
+$table-row-padding-mobile: 16px;
+$table-row-selected-background: #E1E1E1; // Mercury
+$table-row-hover-background: #FAFAFA; // Alabaster
+
+// Avatars
+$avatar-border-radius: 50%;
+$avatar-max-size-desktop: 48px;
+$avatar-max-size-mobile: 36px;
+$avatar-placeholder-color: #E1E1E1; // Mercury
+
+// Hero Image Overlay
+$hero-overlay-color: rgba(0, 0, 0, 0.5);
