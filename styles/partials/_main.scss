@@ -1,0 +1,69 @@
+@import "./variables";
+
+body {
+    
+    font-size:$body-copy-font-size-mobile;
+    line-height:$body-copy-line-height-mobile;
+    font-weight:$font-weight-regular;
+    color:$primary-text-color;
+    margin: 0px;
+
+    @include tablet {
+        font-size:$body-copy-font-size-desktop;
+        line-height:$body-copy-line-height-desktop;
+    }
+}
+
+page-header {
+    font-size:$page-header-font-size-mobile;
+    line-height:$page-header-line-height-mobile;
+    font-weight:$page-header-font-weight-mobile;
+    color:$light-background-color;
+    padding-left: 16px;
+    
+
+    @include tablet {
+        font-size:$page-header-font-size-desktop;
+        line-height:$page-header-line-height-desktop;
+        padding-left: 36px;
+        
+    }
+    @include desktop {
+        padding-left: auto;
+    }
+}
+
+section-header {
+    font-size:$section-header-font-size-mobile;
+    line-height:$section-header-line-height-mobile;
+    font-weight:$section-header-font-weight-mobile;
+    color: $BandSite-DarkBlack;
+    padding:$padding-headlines-mobile;
+    display: block;
+    
+
+    @include tablet {
+        font-size:$section-header-font-size-desktop;
+        line-height:$section-header-line-height-desktop;
+        padding:$padding-headlines-desktop;
+        display: block;
+        
+    }
+}
+
+sub-header {
+    font-size:$subheader-font-size-mobile;
+    line-height:$subheader-line-height-mobile;
+    font-weight:$subheader-font-weight-mobile;
+    color:$BandSite-DarkBlack;
+
+    @include tablet {
+        font-size:$subheader-font-size-desktop;
+        line-height:$subheader-line-height-desktop;
+    }
+}
+
+.subcopy {
+    font-size: 14px;
+    color:$BandSite-DarkBlack;
+}
