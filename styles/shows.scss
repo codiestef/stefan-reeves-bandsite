@@ -1,0 +1,147 @@
+@import './partials/variables';
+@import './partials/navbar';
+@import './partials/footer';
+@import './partials/main';
+
+
+.shows-subheader {
+    color:$White;
+    padding:$padding-headlines-mobile;
+
+    @include tablet {
+        padding:$padding-headlines-desktop;
+    }
+}
+.shows-hero {
+    position: relative;
+    background-image: url(../assets/images/hero-shows.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before { 
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(50, 50, 50, 0.5);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        position: relative;
+        width: 60%;
+        
+    }
+
+    &__subheader {
+        color:$White
+    }
+}
+
+.shows-section {
+    width: 100%;
+
+    @include tablet {
+        margin: 24px;
+    }
+
+    @include desktop {
+        display: flex;
+        max-width: 1020px;
+        margin: auto;
+
+    }
+}
+#shows-table {
+    width: 100%;
+    padding:$table-row-padding-mobile;
+
+    @include tablet {
+        padding:$table-row-padding-desktop;
+    }
+
+}
+/* Default table row style */
+.show-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom:$divider-combined;
+    // padding:$table-row-padding-mobile;
+
+    @include tablet {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    padding:$table-row-padding-desktop;
+
+    }
+    &__date {
+        font-weight:$font-weight-bold;
+      }
+
+      &__venue {
+        font-weight:$font-weight-demi;
+        font-size:$body-copy-font-size-mobile;
+      }
+
+        &__location {
+        font-weight:$font-weight-demi;
+        font-size:$body-copy-font-size-mobile;
+      }
+  }
+  
+  /* Selected table row style */
+  .show-row.selected {
+    background-color: #E1E1E1;
+  }
+  
+  /* Hover table row style */
+  .show-row.hovered {
+    background-color: #FAFAFA;
+  }
+  
+  /* Table cell styles */
+  .show-row td {
+    padding:$table-row-padding-mobile;
+    justify-content: space-between;
+
+    @include tablet {
+        padding:$table-row-padding-desktop;
+        justify-content: space-between;
+    }
+  }
+
+  /* Button cell style */
+  .show-row__button-cell {
+
+    @include tablet {
+    padding-left: 0;
+    }
+}
+  
+  /* Button style */
+  .show-row__buy-tickets {
+    height:$button-height;
+    background-color:$primary-cta-background-color-default;
+    color:$primary-cta-text-color-default;
+    border-radius:$button-radius;
+    cursor: pointer;
+    width:$button-width-mobile;
+
+    @include tablet {
+    padding:$button-padding-desktop;
+    min-width:$button-min-width-desktop;
+  }
+  }
+  
+  /* Button hover effect */
+  .show-row__buy-tickets:hover {
+    background-color:$primary-cta-background-color-hover; /* Darker background color on hover */
+  }
