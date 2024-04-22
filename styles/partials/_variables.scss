@@ -106,7 +106,7 @@ $padding-headlines-mobile: 24px 16px 16px 16px;
 // Iconography
 // Button Dimensions
 $button-height: 40px;
-$button-width-desktop: 150px;
+$button-min-width-desktop: 150px;
 $button-padding-desktop: 0 32px;
 $button-width-mobile: 100%;
 
@@ -133,7 +133,8 @@ $navigation-underline-width-max: auto;
 
 // Dividers
 $divider-stroke-width: 1px;
-$divider-fill-color: #E1E1E1;
+$divider-fill-color:$Mercury;
+$divider-combined: 1px solid $Mercury;
 
 // Form Fields
 $form-field-height-desktop: 48px;
