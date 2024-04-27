@@ -1,4 +1,5 @@
 @import "./media-queries";
+@import "./fonts";
 
 // Website Colors
 $BandSite-Black:#323232;
@@ -21,7 +22,7 @@ $light-background-color-alt: #FAFAFA;
 
 // Type Kit
 // Typeface & Weights
-$typeface-primary: 'Avenir Next', sans-serif;
+$font-face-avenir: "Avenir Next LT Pro";
 $font-weight-regular: 400;
 $font-weight-demi: 600;
 $font-weight-bold: 700;
@@ -34,32 +35,35 @@ $section-header-font-size-desktop: 36px;
 $section-header-line-height-desktop: 44px;
 $subheader-font-size-desktop: 24px;
 $subheader-line-height-desktop: 32px;
-$body-copy-font-size-desktop: 14px;
-$body-copy-line-height-desktop: 22px;
-$footer-copy-font-size-desktop: 14px;
 $footer-copy-line-height-desktop: 20px;
 $labels-buttons-font-size-desktop: 12px;
 $labels-buttons-line-height-desktop: 20px;
 
+
+$body-copy-font-size-mobile: .7em;
+$body-copy-line-height-mobile: 1.45em;
+$body-copy-font-weight-mobile: 400;
+
+$body-copy-font-size-desktop: 14px;
+$body-copy-line-height-desktop: 22px;
+$footer-copy-font-size-desktop: 14px;
+
 // Mobile Text Styles
 $page-header-font-size-mobile: 24px;
 $page-header-line-height-mobile: 32px;
-$page-header-font-weight-mobile:$font-weight-bold;
+$page-header-font-weight-mobile: 700;
 $section-header-font-size-mobile: 24px;
 $section-header-line-height-mobile: 32px;
-$section-header-font-weight-mobile:$font-weight-bold;
-$subheader-font-size-mobile: 14px;
-$subheader-line-height-mobile: 22px;
-$subheader-font-weight-mobile:$font-weight-demi;
-$body-copy-font-size-mobile: 13px;
-$body-copy-line-height-mobile: 18px;
-$body-copy-font-weight-mobile:$font-weight-regular;
+$section-header-font-weight-mobile: 700;
+$subheader-font-size-mobile: 1em;
+$subheader-line-height-mobile: 1.75em;
+$subheader-font-weight-mobile: 600;
 $footer-copy-font-size-mobile: 13px;
 $footer-copy-line-height-mobile: 18px;
-$footer-copy-font-weight-mobile:$font-weight-regular;
+$footer-copy-font-weight-mobile: 400;
 $labels-buttons-font-size-mobile: 10px;
 $labels-buttons-line-height-mobile: 20px;
-$labels-buttons-font-weight-mobile:$font-weight-bold;
+$labels-buttons-font-weight-mobile: 700;
 
 // Website Colors
 // Primary Colors
