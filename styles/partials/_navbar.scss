@@ -6,7 +6,7 @@
 }
 .navbar {
     background-color:$BandSite-Black;
-    height: 60px;
+    height: 6em;
     position: relative;
 
 
@@ -19,14 +19,14 @@
     &__logo {
         justify-content: center;
         display:flex;
-        margin: 10px 0px 3px 0px;
+        margin-top: 1.25em;
         width: 100%;
-        max-width: 120px;
-        max-height: 20px;
+        max-width: 12em;
+        max-height: 1.5em;
 
         &--icon {
-            max-width: 120px;
-            max-height: 20px;
+            max-width: 12em;
+            max-height: 1.5em;
             justify-content: center;
         }
 
@@ -40,8 +40,10 @@
     &__menu {
         align-items: center;
         width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
+        // padding-left: 16px;
+        // padding-right: 16px;
+        // padding-top: 1.75em;
+        margin-bottom: 1.75em;
         display: flex;
         flex-direction: column;
 
@@ -70,17 +72,21 @@
     &__link {
         text-decoration: none;
         color:$Mercury;
-        font-size: 13px;
+        // font-size: 1.2em;
         justify-items: center;
         width: 100%;
         text-align: center;
-        // justify-content: space-between;
+        line-height: 3.1em;
+        // padding: .25em;
 
-        &:active {
+        @include tablet {
+            // padding: 1em;
+        // justify-content: space-between;
+        }
+
+        &.active {
             color:$White;
-            font-weight: 700;
-            text-decoration: underline;
-            font-size: 13px;
+            border-bottom:$White .2em solid;
         }
     }
 }
