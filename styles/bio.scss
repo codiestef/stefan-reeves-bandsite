@@ -56,8 +56,12 @@
         }
 
         &__quote {
-            margin-top: 16px;
-            margin-bottom: 24px;
+            margin-top: .7em;
+            margin-bottom: 1.5em;
+            font-size:$subheader-font-size-mobile;
+            line-height:$subheader-line-height-mobile;
+            font-weight:$subheader-font-weight-mobile;
+            color:$BandSite-DarkBlack;
 
             @include tablet {
                 margin-top: 16px;
@@ -153,7 +157,7 @@
         margin-top: 24px;
 
         @include tablet {
-            width:$button-width-desktop;
+            width:$button-min-width-desktop;
             padding:$button-padding-desktop;
         }
     }
