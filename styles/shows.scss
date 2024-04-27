@@ -1,17 +1,13 @@
 @import './partials/variables';
+@import './partials/main';
 @import './partials/navbar';
 @import './partials/footer';
-@import './partials/main';
 
-
-.shows-subheader {
-    color:$White;
-    padding:$padding-headlines-mobile;
-
-    @include tablet {
-        padding:$padding-headlines-desktop;
-    }
+* {
+  box-sizing: border-box;
 }
+
+
 .shows-hero {
     position: relative;
     background-image: url(../assets/images/hero-shows.jpg);
@@ -31,24 +27,30 @@
     &__container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         height: 50vh;
+        min-height: 360px;
         position: relative;
-        width: 60%;
-        padding-left: 16px;
+        // width: 60%;
+        // padding-left: 16px;
         
     }
 
     &__subheader {
-        color:$White
-    }
+      color:$White;
+      padding:$padding-headlines-mobile;
+  
+      @include tablet {
+          padding:$padding-headlines-desktop;
+      }
+  }
 }
 
 .shows-section {
     width: 100%;
 
     @include tablet {
-        margin: 24px;
+        padding: 24px;
     }
 
     @include desktop {
