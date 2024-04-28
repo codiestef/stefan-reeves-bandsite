@@ -86,11 +86,25 @@
 
     <div class="form-container">
         <form class="comment-form">
-            <p>NAME</p>
-            <input type="text" placeholder="Enter your name" name="name" />
-            <p>COMMENT</p>
-            <input type="review" placeholder="Add a new comment" name="review" />
-            <button type="submit" class="comment-form__button">COMMENT</button>
+            <label for="commentName" class="comment-form__title">
+                NAME
+            </label>
+            <input
+                class="comment-form__input"
+                type="text"
+                placeholder="Enter your name"
+                name="commentName"
+            />
+            <!-- <label for="commentReview" class="comment-form__title">
+                COMMENT
+            </label> -->
+            <textarea
+            class="comment-form__textarea"
+            type="review"
+            placeholder="Add a new comment"
+            name="commentReview"
+            ></textarea>
+            <button class="comment-form__button" type="submit">COMMENT</button>
         </form>
     </div>
     <div class="comments">
