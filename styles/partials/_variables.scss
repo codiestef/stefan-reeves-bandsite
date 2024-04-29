@@ -9,7 +9,6 @@ $BandSite-DarkBlack:#000000;
 $Mercury: #E1E1E1;
 $Alabaster:#FAFAFA;
 
-// Website Colors
 // Primary Colors
 $primary-text-color: #323232;
 $primary-text-color-dark: #000000;
@@ -27,10 +26,8 @@ $font-weight-regular: 400;
 $font-weight-demi: 600;
 $font-weight-bold: 700;
 
-// Text Styles
 
 // Padding
-// Desktop & Tablet Padding
 $padding-before-headlines-desktop: 48px;
 $padding-after-headlines-desktop: 36px;
 $padding-between-components-desktop: 36px;
@@ -39,16 +36,12 @@ $padding-headlines-mobile: 1em 1em 1em 1em;
 $padding-headlines-tablet: 1em 1em .2em 1.8em;
 $padding-headlines-desktop: 1em 0 .3em 0;
 
-
-// Mobile Padding
-
 $padding-between-components-mobile: 16px;
-// Desktop & Tablet Text Styles
 $padding-before-headlines-mobile: 24px;
 $padding-after-headlines-mobile: 16px;
 
 $page-header-font-size-mobile: 2em;
-$page-header-line-height-mobile: 3em;
+$page-header-line-height-mobile: 1.2em;
 $page-header-font-weight-mobile: 700;
 
 $page-header-font-size-desktop: 4em;
@@ -78,8 +71,6 @@ $body-copy-line-height-desktop: 22px;
 $footer-copy-font-size-desktop: 14px;
 
 // Mobile Text Styles
-
-
 $subheader-font-size-mobile: 1em;
 $subheader-line-height-mobile: 1.75em;
 $subheader-font-weight-mobile: 600;
@@ -100,24 +91,6 @@ $light-background-color: #FFFFFF;
 // Secondary Colors
 $divider-color: #E1E1E1;
 $light-background-color-alt: #FAFAFA;
-
-// Layout Grid
-// Desktop Grid
-$desktop-screen: 1280px;
-$desktop-grid-columns: 12;
-$desktop-grid-margin: auto;
-$desktop-grid-column-width: 63px;
-$desktop-grid-gutter-width: 24px;
-
-// Tablet Grid
-$tablet-screen: 768px;
-$tablet-screen-max: 1279px;
-$tablet-grid-margin: 36px;
-
-// Mobile Grid
-$mobile-screen: 767px;
-$mobile-grid-columns: 6;
-$mobile-grid-margin: 16px;
 
 // Iconography
 // Button Dimensions
@@ -144,7 +117,7 @@ $logo-max-width: 120px;
 $navigation-inactive-link-color: #E1E1E1;
 $navigation-active-link-color: #FFFFFF;
 $navigation-underline-color: #FFFFFF;
-$navigation-underline-width-min: 1; // grid column unit
+$navigation-underline-width-min: 1;
 $navigation-underline-width-max: auto;
 
 // Dividers
@@ -165,8 +138,6 @@ $form-field-padding-mobile: .75em;
 
 $form-field-min-height-desktop: 7em;
 $form-field-padding-desktop: 1em;
-
-
 
 // Tables
 $table-row-padding-desktop: 24px 18px;

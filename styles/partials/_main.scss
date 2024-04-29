@@ -1,95 +1,74 @@
 @import "./variables";
 
 body {
-    font-family:$font-face-avenir;
-    font-size:$body-copy-font-size-mobile;
-    line-height:$body-copy-line-height-mobile;
-    font-weight:$font-weight-regular;
-    color:$primary-text-color;
-    margin: 0px;
+  font-family: $font-face-avenir;
+  font-size: $body-copy-font-size-mobile;
+  line-height: $body-copy-line-height-mobile;
+  font-weight: $font-weight-regular;
+  color: $primary-text-color;
+  margin: 0px;
 
-    @include tablet {
-        font-size:$body-copy-font-size-desktop;
-        line-height:$body-copy-line-height-desktop;
-    }
+  @include tablet {
+    font-size: $body-copy-font-size-desktop;
+    line-height: $body-copy-line-height-desktop;
+  }
 }
 
-// main {
-    
-//     @include tablet {
-//         margin-left: 2em;
-//         margin-right: 2em;
-//     }
-//     @include desktop {
-//         width: 1020px;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-// }
-
 page-header {
-    font-size:$page-header-font-size-mobile;
-    line-height:$page-header-line-height-mobile;
-    font-weight:$page-header-font-weight-mobile;
-    color:$light-background-color;
+  font-size: $page-header-font-size-mobile;
+  line-height: $page-header-line-height-mobile;
+  font-weight: $page-header-font-weight-mobile;
+  color: $light-background-color;
+  margin-left: 1em;
+
+  @include tablet {
+    font-size: $page-header-font-size-desktop;
+    line-height: $page-header-line-height-desktop;
     margin-left: 1em;
-    
+  }
 
-    @include tablet {
-        font-size:$page-header-font-size-desktop;
-        line-height:$page-header-line-height-desktop;
-        margin-left: 1em;
-        }
-
-    @include desktop {
-        width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-        }
-        
-    }
-//     @include desktop {
-//         padding-left: auto;
-//     }
-// }
+  @include desktop {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 section-header {
-    font-size:$section-header-font-size-mobile;
-    line-height:$section-header-line-height-mobile;
-    font-weight:$section-header-font-weight-mobile;
-    color: $BandSite-DarkBlack;
-    padding:$padding-headlines-mobile;
-    display: block;
-    
+  font-size: $section-header-font-size-mobile;
+  line-height: $section-header-line-height-mobile;
+  font-weight: $section-header-font-weight-mobile;
+  color: $BandSite-DarkBlack;
+  padding: $padding-headlines-mobile;
+  display: block;
 
-    @include tablet {
-        font-size:$section-header-font-size-desktop;
-        line-height:$section-header-line-height-desktop;
-        padding:$padding-headlines-tablet;
-        // margin-left: 1em;
-        }
+  @include tablet {
+    font-size: $section-header-font-size-desktop;
+    line-height: $section-header-line-height-desktop;
+    padding: $padding-headlines-tablet;
+  }
 
-    @include desktop {
-        width: 1100px;
-        padding:$padding-headlines-desktop;
-        margin-left: auto;
-        margin-right: auto;
-        }
+  @include desktop {
+    width: 1100px;
+    padding: $padding-headlines-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 sub-header {
-    font-size:$subheader-font-size-mobile;
-    line-height:$subheader-line-height-mobile;
-    font-weight:$subheader-font-weight-mobile;
-    color:$BandSite-DarkBlack;
+  font-size: $subheader-font-size-mobile;
+  line-height: $subheader-line-height-mobile;
+  font-weight: $subheader-font-weight-mobile;
+  color: $BandSite-DarkBlack;
 
-    @include tablet {
-        font-size:$subheader-font-size-desktop;
-        line-height:$subheader-line-height-desktop;
-    }
+  @include tablet {
+    font-size: $subheader-font-size-desktop;
+    line-height: $subheader-line-height-desktop;
+  }
 }
 
 .subcopy {
-    font-size: 14px;
-    color:$BandSite-DarkBlack;
+  font-size: 14px;
+  color: $BandSite-DarkBlack;
 }
