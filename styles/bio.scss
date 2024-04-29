@@ -99,6 +99,7 @@
         max-width: 100%;
         margin-bottom: 15px;
     }
+    
 
     &__item {
         width: 100%;
@@ -117,33 +118,77 @@
     }
 }
 
+.comment-section {
+
+    @include tablet {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+    }
+
+    // @include desktop {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     max-width: 540px;
+    // }
+
+}
+
 .comment-form {
     // width: 100%;
     align-items: end;
     margin: auto;
-    padding: 16px;
+    padding: 1em 1em 1em 5em;
+    
+    @include tablet {}
 
-    input[type=text] {
+    &__label {
+        font-family:$font-face-avenir;
+        color:$Silver;
+        font-size: .8em;
+    }
+
+    &__input {
+        font-family:$font-face-avenir;
+        color:$BandSite-DarkBlack;
+        font-size: 1em;
         width: 100%;
         min-height: 36px;
         border: 1px solid $Mercury;
-        border-radius: 4px;
-        padding: 12px;
+        border-radius:$form-field-radius;
+        padding: $form-field-padding-mobile;
+        margin-bottom: 1em;
 
         @include tablet {
-            height: 48px;
+            height: 3em;
+        }
+
+        &::placeholder {
+            color:$BandSite-DarkBlack;
+            padding-left: .3em;
         }
     }
 
-    input[type=review] {
+    // input[type=review]
+    &__textarea {
+        font-family:$font-face-avenir;
+        color:$BandSite-Black;
+        font-size: 1em;
         width:$form-field-width;
-        min-height: 108px;
+        min-height:$form-field-min-height-mobile;
         border:$form-field-border-default;
         border-radius:$form-field-radius;
         padding:$form-field-padding-mobile;
-        
+        resize: none;
+
         @include tablet {
-            height: 108px;
+            min-height:$form-field-min-height-desktop;
+            padding:$form-field-padding-desktop;
+        }
+
+        &::placeholder {
+            color:$BandSite-DarkBlack;
+            padding-left: .3em;
         }
     }
 
@@ -155,17 +200,21 @@
         height:$button-height;
         border-radius:$button-radius;
         margin-top: 24px;
+        cursor: pointer;
 
         @include tablet {
             width:$button-min-width-desktop;
             padding:$button-padding-desktop;
+            display: block;
+            margin: 10px 0 10px auto;
         }
     }
 }
 
 .comment-list {
     background-color: $White;
-    padding: 10px;
+    padding: 1em;
+    border-bottom: 2px solid $Mercury;
 
     &__item {
         text-decoration: none;
@@ -173,13 +222,29 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        border-top: 2px solid $Mercury;
     }
+
+    // &__avatar-blank {
+    //     width: 36px;
+    //     height: 36px;
+    //     border-radius: 50%;
+    //     background-color:$Mercury;
+    //     margin-right: 10px;
+    
+    //     @include tablet {
+    //         width: 48px;
+    //         height: 48px;
+    //     }
+    // }
 
     &__name {
         color:$BandSite-DarkBlack;
         display:inline-flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 1.3em;
+        padding-left: 3.4em;
     }
 
     &__timestamp {
@@ -187,10 +252,13 @@
         display:inline-flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 1.3em;
     }
     
     &__review {
         color:$BandSite-Black;
         width: 100%;
+        margin-bottom: 1em;
+        padding-left: 4em;
     }
 }
