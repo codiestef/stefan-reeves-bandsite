@@ -1,6 +1,130 @@
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTPro.ttf) format("ttf") local(Avenir Next LT Pro);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format("ttf") local(Avenir Next LT Pro Demi);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format("ttf") local(Avenir Next LT Pro Bold);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTPro.ttf) format("ttf") local(Avenir Next LT Pro);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format("ttf") local(Avenir Next LT Pro Demi);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format("ttf") local(Avenir Next LT Pro Bold);
+  font-weight: 700;
+}
+body {
+  font-family: "Avenir Next LT Pro";
+  font-size: 0.7em;
+  line-height: 1.45em;
+  font-weight: 400;
+  color: #323232;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+page-header {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-left: 1em;
+}
+@media screen and (min-width: 768px) {
+  page-header {
+    font-size: 4em;
+    line-height: 68px;
+    margin-left: 1em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  page-header {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section-header {
+  font-size: 1.5em;
+  line-height: 2.2em;
+  font-weight: 700;
+  color: #000000;
+  padding: 1em 1em 1em 1em;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  section-header {
+    font-size: 2.2em;
+    line-height: 2.5em;
+    padding: 1em 1em 0.2em 1.8em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section-header {
+    width: 1100px;
+    padding: 1em 0 0.3em 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+sub-header {
+  font-size: 1em;
+  line-height: 1.75em;
+  font-weight: 600;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  sub-header {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subcopy {
+  font-size: 14px;
+  color: #000000;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTPro.ttf) format("ttf") local(Avenir Next LT Pro);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format("ttf") local(Avenir Next LT Pro Demi);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format("ttf") local(Avenir Next LT Pro Bold);
+  font-weight: 700;
+}
 .navbar {
   background-color: #323232;
-  height: 60px;
+  height: 5.7em;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -8,19 +132,20 @@
     display: flex;
     justify-content: flex-start;
     gap: 20px;
+    height: 5.2em;
   }
 }
 .navbar__logo {
   justify-content: center;
   display: flex;
-  margin: 10px 0px 3px 0px;
+  margin-top: 1.25em;
   width: 100%;
-  max-width: 120px;
-  max-height: 20px;
+  max-width: 12em;
+  max-height: 1.5em;
 }
 .navbar__logo--icon {
-  max-width: 120px;
-  max-height: 20px;
+  max-width: 12em;
+  max-height: 1.5em;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -31,11 +156,15 @@
     padding: 0px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .navbar__logo {
+    margin: 0;
+  }
+}
 .navbar__menu {
   align-items: center;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-bottom: 1.5em;
   display: flex;
   flex-direction: column;
 }
@@ -43,6 +172,14 @@
   .navbar__menu {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar__menu {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
   }
 }
 .navbar__items {
@@ -53,24 +190,44 @@
 }
 @media screen and (min-width: 768px) {
   .navbar__items {
-    width: 200px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .navbar__link {
   text-decoration: none;
   color: #E1E1E1;
-  font-size: 13px;
   justify-items: center;
   width: 100%;
   text-align: center;
+  line-height: 2.8em;
 }
-.navbar__link:active {
+@media screen and (min-width: 768px) {
+  .navbar__link {
+    margin-right: 3em;
+    line-height: 5em;
+  }
+}
+.navbar__link.active {
   color: #FFFFFF;
-  font-weight: 700;
-  text-decoration: underline;
-  font-size: 13px;
+  border-bottom: #FFFFFF 0.3em solid;
 }
 
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTPro.ttf) format("ttf") local(Avenir Next LT Pro);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format("ttf") local(Avenir Next LT Pro Demi);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format("ttf") local(Avenir Next LT Pro Bold);
+  font-weight: 700;
+}
 .footer {
   background-color: #323232;
   font-size: 13px;
@@ -162,82 +319,29 @@
   color: #FFFFFF;
 }
 
-body {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #323232;
-  margin: 0px;
-}
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-page-header {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #FFFFFF;
-  padding-left: 16px;
-}
-@media screen and (min-width: 768px) {
-  page-header {
-    font-size: 60px;
-    line-height: 68px;
-    padding-left: 36px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  page-header {
-    padding-left: auto;
-  }
-}
-
-section-header {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #000000;
-  padding: 24px 16px 16px 16px;
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  section-header {
-    font-size: 36px;
-    line-height: 44px;
-    padding: 48px 36px 36px 36px;
-    display: block;
-  }
-}
-
-sub-header {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
-  color: #000000;
-}
-@media screen and (min-width: 768px) {
-  sub-header {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-.subcopy {
-  font-size: 14px;
-  color: #000000;
+* {
+  box-sizing: border-box;
 }
 
 .shows-subheader {
   color: #FFFFFF;
-  padding: 24px 16px 16px 16px;
+  padding: 1em 1em 1em 1em;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-left: 0.5em;
+  margin-top: 2em;
 }
 @media screen and (min-width: 768px) {
   .shows-subheader {
-    padding: 48px 36px 36px 36px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows-subheader {
+    width: 1100px;
+    padding: 1em 0 0.3em 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -259,14 +363,18 @@ sub-header {
 .shows-hero__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 50vh;
+  min-height: 25em;
   position: relative;
-  width: 60%;
-  padding-left: 16px;
 }
-.shows-hero__subheader {
-  color: #FFFFFF;
+@media screen and (min-width: 768px) {
+  .shows-hero__container {
+    min-height: 35em;
+  }
+}
+
+.iframe {
+  margin-left: 2em;
 }
 
 .shows-section {
@@ -274,7 +382,7 @@ sub-header {
 }
 @media screen and (min-width: 768px) {
   .shows-section {
-    margin: 24px;
+    padding: 24px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -284,26 +392,29 @@ sub-header {
     margin: auto;
   }
 }
-
-#shows-table {
+@media screen and (min-width: 1280px) {
+  .shows-section #shows-section-header {
+    width: auto;
+  }
+}
+.shows-section #shows-table {
   width: 100%;
   padding: 16px;
 }
 @media screen and (min-width: 768px) {
-  #shows-table {
+  .shows-section #shows-table {
     padding: 24px 18px;
   }
 }
-
-/* Default table row style */
-.show-row {
+.shows-section .show-row {
   display: flex;
   flex-direction: column;
   width: 100%;
   border-bottom: 1px solid #E1E1E1;
+  font-size: 1em;
 }
 @media screen and (min-width: 768px) {
-  .show-row {
+  .shows-section .show-row {
     flex-direction: row;
     align-items: center;
     width: auto;
@@ -311,50 +422,48 @@ sub-header {
     padding: 24px 18px;
   }
 }
-.show-row__date {
-  font-weight: 700;
-}
-.show-row__venue {
+.shows-section .show-row__date {
+  font-size: 1em;
   font-weight: 600;
-  font-size: 13px;
 }
-.show-row__location {
-  font-weight: 600;
-  font-size: 13px;
+@media screen and (min-width: 768px) {
+  .shows-section .show-row__date {
+    font-size: 14px;
+  }
 }
-
-/* Selected table row style */
-.show-row.selected {
-  background-color: #E1E1E1;
+@media screen and (min-width: 768px) {
+  .shows-section .show-row__venue {
+    font-size: 14px;
+  }
 }
-
-/* Hover table row style */
-.show-row.hovered {
-  background-color: #FAFAFA;
+@media screen and (min-width: 768px) {
+  .shows-section .show-row__location {
+    font-size: 14px;
+  }
 }
-
-/* Table cell styles */
-.show-row td {
+.shows-section .show-row.selected {
+  background-color: #e1e1e1;
+}
+.shows-section .show-row.hovered {
+  background-color: #fafafa;
+}
+.shows-section .show-row td {
   padding: 16px;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
-  .show-row td {
+  .shows-section .show-row td {
     padding: 24px 18px;
     justify-content: space-between;
   }
 }
-
-/* Button cell style */
 @media screen and (min-width: 768px) {
-  .show-row__button-cell {
+  .shows-section .show-row__button-cell {
     padding-left: 0;
   }
 }
-
-/* Button style */
-.show-row__buy-tickets {
-  height: 40px;
+.shows-section .show-row__buy-tickets {
+  height: 2.7em;
   background-color: #323232;
   color: #FFFFFF;
   border-radius: 4px;
@@ -362,13 +471,11 @@ sub-header {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .show-row__buy-tickets {
-    padding: 0 32px;
-    min-width: 150px;
+  .shows-section .show-row__buy-tickets {
+    padding: 0 2em;
+    min-width: 10em;
   }
 }
-
-/* Button hover effect */
-.show-row__buy-tickets:hover {
+.shows-section .show-row__buy-tickets:hover {
   background-color: #000000; /* Darker background color on hover */
 }
