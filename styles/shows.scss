@@ -1,150 +1,165 @@
-@import './partials/variables';
-@import './partials/main';
-@import './partials/navbar';
-@import './partials/footer';
+@import "./partials/variables";
+@import "./partials/main";
+@import "./partials/navbar";
+@import "./partials/footer";
 
 * {
   box-sizing: border-box;
 }
 
+.shows-subheader {
+  color: $White;
+  padding: $padding-headlines-mobile;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-left: 0.5em;
+  margin-top: 2em;
 
-.shows-hero {
-    position: relative;
-    background-image: url(../assets/images/hero-shows.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    &::before { 
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(50, 50, 50, 0.5);
-    }
-
-    &__container {
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        height: 50vh;
-        min-height: 360px;
-        position: relative;
-        // width: 60%;
-        // padding-left: 16px;
-        
-    }
-
-    &__subheader {
-      color:$White;
-      padding:$padding-headlines-mobile;
-  
-      @include tablet {
-          padding:$padding-headlines-desktop;
-      }
+  @include tablet {
+    font-size: $subheader-font-size-desktop;
   }
+
+  @include desktop {
+    width: 1100px;
+    padding: $padding-headlines-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.shows-hero {
+  position: relative;
+  background-image: url(../assets/images/hero-shows.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(50, 50, 50, 0.5);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    min-height: 25em;
+    position: relative;
+
+    @include tablet {
+      min-height: 35em;
+    }
+  }
+}
+.iframe {
+  margin-left: 2em;
 }
 
 .shows-section {
-    width: 100%;
+  width: 100%;
 
-    @include tablet {
-        padding: 24px;
-    }
+  @include tablet {
+    padding: 24px;
+  }
 
+  @include desktop {
+    display: flex;
+    max-width: 1020px;
+    margin: auto;
+  }
+
+  #shows-section-header {
     @include desktop {
-        display: flex;
-        max-width: 1020px;
-        margin: auto;
-
+      width: auto;
     }
-}
-#shows-table {
+  }
+
+  #shows-table {
     width: 100%;
-    padding:$table-row-padding-mobile;
+    padding: $table-row-padding-mobile;
 
     @include tablet {
-        padding:$table-row-padding-desktop;
+      padding: $table-row-padding-desktop;
     }
+  }
 
-}
-/* Default table row style */
-.show-row {
+  .show-row {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-bottom:$divider-combined;
-    // padding:$table-row-padding-mobile;
+    border-bottom: $divider-combined;
+    font-size: 1em;
 
     @include tablet {
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    justify-content: space-between;
-    padding:$table-row-padding-desktop;
-
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      justify-content: space-between;
+      padding: $table-row-padding-desktop;
     }
     &__date {
-        font-weight:$font-weight-bold;
-      }
+      font-size: 1em;
+      font-weight: 600;
 
-      &__venue {
-        font-weight:$font-weight-demi;
-        font-size:$body-copy-font-size-mobile;
+      @include tablet {
+        font-size: $body-copy-font-size-desktop;
       }
+    }
 
-        &__location {
-        font-weight:$font-weight-demi;
-        font-size:$body-copy-font-size-mobile;
+    &__venue {
+      @include tablet {
+        font-size: $body-copy-font-size-desktop;
       }
+    }
+
+    &__location {
+      @include tablet {
+        font-size: $body-copy-font-size-desktop;
+      }
+    }
   }
-  
-  /* Selected table row style */
   .show-row.selected {
-    background-color: #E1E1E1;
+    background-color: #e1e1e1;
   }
-  
-  /* Hover table row style */
+
   .show-row.hovered {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
   }
-  
-  /* Table cell styles */
+
   .show-row td {
-    padding:$table-row-padding-mobile;
+    padding: $table-row-padding-mobile;
     justify-content: space-between;
 
     @include tablet {
-        padding:$table-row-padding-desktop;
-        justify-content: space-between;
+      padding: $table-row-padding-desktop;
+      justify-content: space-between;
     }
   }
 
-  /* Button cell style */
   .show-row__button-cell {
-
     @include tablet {
-    padding-left: 0;
+      padding-left: 0;
     }
-}
-  
-  /* Button style */
+  }
+
   .show-row__buy-tickets {
-    height:$button-height;
-    background-color:$primary-cta-background-color-default;
-    color:$primary-cta-text-color-default;
-    border-radius:$button-radius;
+    height: $button-height;
+    background-color: $primary-cta-background-color-default;
+    color: $primary-cta-text-color-default;
+    border-radius: $button-radius;
     cursor: pointer;
-    width:$button-width-mobile;
+    width: $button-width-mobile;
 
     @include tablet {
-    padding:$button-padding-desktop;
-    min-width:$button-min-width-desktop;
+      padding: $button-padding-desktop;
+      min-width: $button-min-width-desktop;
+    }
   }
-  }
-  
-  /* Button hover effect */
+
   .show-row__buy-tickets:hover {
-    background-color:$primary-cta-background-color-hover; /* Darker background color on hover */
+    background-color: $primary-cta-background-color-hover; /* Darker background color on hover */
   }
+}
