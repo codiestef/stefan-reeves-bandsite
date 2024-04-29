@@ -28,11 +28,40 @@ $font-weight-demi: 600;
 $font-weight-bold: 700;
 
 // Text Styles
+
+// Padding
+// Desktop & Tablet Padding
+$padding-before-headlines-desktop: 48px;
+$padding-after-headlines-desktop: 36px;
+$padding-between-components-desktop: 36px;
+
+$padding-headlines-mobile: 1em 1em 1em 1em;
+$padding-headlines-tablet: 1em 1em .2em 1.8em;
+$padding-headlines-desktop: 1em 0 .3em 0;
+
+
+// Mobile Padding
+
+$padding-between-components-mobile: 16px;
 // Desktop & Tablet Text Styles
-$page-header-font-size-desktop: 60px;
+$padding-before-headlines-mobile: 24px;
+$padding-after-headlines-mobile: 16px;
+
+$page-header-font-size-mobile: 2em;
+$page-header-line-height-mobile: 3em;
+$page-header-font-weight-mobile: 700;
+
+$page-header-font-size-desktop: 4em;
 $page-header-line-height-desktop: 68px;
-$section-header-font-size-desktop: 36px;
-$section-header-line-height-desktop: 44px;
+
+$section-header-font-size-desktop: 2.2em;
+
+$section-header-font-size-mobile: 1.5em;
+$section-header-line-height-mobile: 2.2em;
+$section-header-font-weight-mobile: 700;
+
+$section-header-line-height-desktop: 2.5em;
+
 $subheader-font-size-desktop: 24px;
 $subheader-line-height-desktop: 32px;
 $footer-copy-line-height-desktop: 20px;
@@ -49,12 +78,8 @@ $body-copy-line-height-desktop: 22px;
 $footer-copy-font-size-desktop: 14px;
 
 // Mobile Text Styles
-$page-header-font-size-mobile: 24px;
-$page-header-line-height-mobile: 32px;
-$page-header-font-weight-mobile: 700;
-$section-header-font-size-mobile: 24px;
-$section-header-line-height-mobile: 32px;
-$section-header-font-weight-mobile: 700;
+
+
 $subheader-font-size-mobile: 1em;
 $subheader-line-height-mobile: 1.75em;
 $subheader-font-weight-mobile: 600;
@@ -94,24 +119,11 @@ $mobile-screen: 767px;
 $mobile-grid-columns: 6;
 $mobile-grid-margin: 16px;
 
-// Padding
-// Desktop & Tablet Padding
-$padding-before-headlines-desktop: 48px;
-$padding-after-headlines-desktop: 36px;
-$padding-between-components-desktop: 36px;
-$padding-headlines-desktop: 48px 36px 36px 36px;
-
-// Mobile Padding
-$padding-before-headlines-mobile: 24px;
-$padding-after-headlines-mobile: 16px;
-$padding-between-components-mobile: 16px;
-$padding-headlines-mobile: 24px 16px 16px 16px;
-
 // Iconography
 // Button Dimensions
-$button-height: 40px;
-$button-min-width-desktop: 150px;
-$button-padding-desktop: 0 32px;
+$button-height: 2.7em;
+$button-min-width-desktop: 10em;
+$button-padding-desktop: 0 2em;
 $button-width-mobile: 100%;
 
 // Button Radius
@@ -141,16 +153,20 @@ $divider-fill-color:$Mercury;
 $divider-combined: 1px solid $Mercury;
 
 // Form Fields
-$form-field-height-desktop: 48px;
-$form-field-height-mobile: 36px;
 $form-field-width: 100%;
-$form-field-radius: 4px;
-$form-field-padding-desktop: 16px;
-$form-field-padding-mobile: 12px;
+$form-field-radius: .25em;
 $form-field-label-spacing: 4px;
-$form-field-border-default: 1px solid #E1E1E1; // Mercury
-$form-field-border-active: 1px solid #323232; // BandSite-Black
+$form-field-border-default: 1px solid #E1E1E1;
+$form-field-border-active: 1px solid #323232;
 $form-field-border-error: 1px solid #D22D2D;
+
+$form-field-min-height-mobile: 8em;
+$form-field-padding-mobile: .75em;
+
+$form-field-min-height-desktop: 7em;
+$form-field-padding-desktop: 1em;
+
+
 
 // Tables
 $table-row-padding-desktop: 24px 18px;
