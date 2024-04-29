@@ -1,6 +1,6 @@
 
 
-class CommentApi {
+class BandSiteApi {
     constructor(apiKey){
         this.baseURL = "https://unit-2-project-api-25c1595833b2.herokuapp.com";
         this.apiKey = apiKey;
@@ -20,7 +20,7 @@ class CommentApi {
     }
 }
 
-const commentApi = new CommentApi("2491824a-7c92-4e17-a0c9-5cef7929cf54");
+const commentApi = new BandSiteApi("2491824a-7c92-4e17-a0c9-5cef7929cf54");
 
 console.log(commentApi);
 
